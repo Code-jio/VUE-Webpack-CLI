@@ -1,11 +1,9 @@
 <template>
-  <h2>about...</h2>
+  <div class="about">
+    <el-button type="primary">按钮颜色演示</el-button>
+  </div>
 </template>
 
-<script>
-export default {
-  name: "About",
-};
-</script>
+<script setup></script>
 
-<style></style>
+<style scoped lang="scss"></style>

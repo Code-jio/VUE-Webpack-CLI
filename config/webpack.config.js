@@ -52,6 +52,7 @@ module.exports = {
         filename: isProdution ? "static/js/[name].[contenthash:10].js" : "static/js/[name].js",
         chunkFilename: isProdution ? "static/js/[name].[contenthash:10].chunk.js" : "static/js/[name].chunk.js",
         assetModuleFilename: "static/media/[hash:10][query]",
+        clean: true
     },
     module: {
         rules: [
@@ -247,7 +248,7 @@ module.exports = {
         }
     },
     devServer: {
-        host: "localhost",
+        host: "0.0.0.0",
         port: 3000,
         open: true,
         hot: true,

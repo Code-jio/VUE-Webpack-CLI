@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkvue_cli=self.webpackChunkvue_cli||[]).push([[804],{804:(e,u,r)=>{r.r(u),r.d(u,{default:()=>i});var t=r(3074),n=(r(5965),r(6252)),a={class:"about"};const c={},i=(0,r(3744).Z)(c,[["render",function(e,u){var r=t.mi;return(0,n.wg)(),(0,n.iD)("div",a,[(0,n.Wm)(r,{type:"primary"},{default:(0,n.w5)((function(){return[(0,n.Uk)("按钮颜色演示")]})),_:1})])}]])}}]);
+//# sourceMappingURL=804.6279f493e6.chunk.js.map
