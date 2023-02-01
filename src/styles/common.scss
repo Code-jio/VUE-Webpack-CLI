@@ -1,0 +1,159 @@
+@charset 'UTF-8';
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Microsoft YaHei', 微软雅黑, 'Microsoft JhengHei', 华文细黑,
+    STHeiti, MingLiu;
+}
+
+/*格式化样式*/
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+fieldset,
+img {
+  border: 0;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+i,
+strong,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+caption,
+th {
+  text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+q:before,
+q:after {
+  content: '';
+}
+
+abbr,
+acronym {
+  border: 0;
+}
+
+/*======万能Float清除浮动3======*/
+.clearfix:after,
+.clearfix:before {
+  content: '';
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  zoom: 1;
+}
+//跨浏览器兼容的方案
+
+.text-overflow-hidden {
+  line-height: 1.2em;
+  height: 3.6em;
+  /*超出n行省略号表示，那height必须为line-height的n倍*/
+  position: relative;
+  overflow: hidden;
+}
+//===========多行超出隐藏（省略号）=============
+
+/*因使用了WebKit的CSS扩展属性，该方法适用于WebKit浏览器及移动端；*/
+
+.text-overflow-hidden {
+  display: -webkit-box;
+  /* 必须结合的属性 ，将对象作为弹性伸缩盒子模型显示 */
+  -webkit-orient: vertical;
+  /*必须结合的属性 ，设置或检索伸缩盒对象的子元素的排列方式 */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: bleak-word;
+  /*word-wrap 属性允许长单词或 URL 地址换行到下一行。*/
+  -webkit-line-clamp: 3;
+  /*用来限制在一个块元素显示的文本的行数。*/
+}
+
+//===========单行超出隐藏（用省略号）==========
+
+/*单行溢出，超出部分显示...或者截取。前提必须有宽度*/
+
+.text-overflow-hidden {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+//===========处理IE浏览器图片的默认border 去掉图片底侧的空白缝隙============
+img {
+  border: none;
+  vertical-align: middle;
+}
+
+input {
+  padding: 1px;
+  vertical-align: middle;
+  line-height: normal;
+}
